@@ -1,0 +1,78 @@
+body{
+    margin: 50px;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-right: 70px;
+    
+ }
+ header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding: 1%;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: -900px;
+    width: 100%;
+    background-color: rgb(209, 150, 72);
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+p{
+    padding: 2%;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+
+.myButton{
+  /* position: relative;  
+  align-self: center; */
+
+  width: 20%;
+  margin: auto;
+  display: list-item;
+
+}
+
+.myData{
+  
+  width: 20%;
+  margin: auto;
+  display: block;
+ 
+}
+
+
+
+.OurPartners{
+  margin: auto;
+  text-align: center;
+}
+
+
+
+h3{
+  text-align: center;
+}

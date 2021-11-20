@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+     <!--Nav Bar from Bootstrap-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index">ML Club</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    
+    {% block content %} {% endblock %}
+    <footer>
+        <!-- social media accounts --> 
+        
+        <h6><a href="https://www.youtube.com/channel/UCDTCEjupBZyiF6Dk1RMDRsg">YouTube Channel</a></h6>
+        <!-- Font Awesome Icon-->
+        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 40px"></i>
+        <h6><a href="https//www.twitter.com">Twitter</a></h6>
+        <span class="fa-stack fa-lg">
+            <!-- Font Awesome Icon-->
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+        <h6><a href="https//www.intagram.com">Instagram </a></h6> 
+        <!-- Font Awesome Icon-->
+        <i class="fa fa-instagram" aria-hidden="true" style="font-size: 40px"></i>
+
+
+        <h6>Email: MLClub@ubt.edu.sa</h6>
+        <h6>Address: شارع جامعة الأعمال والتكنولوجيا، Jeddah 23847</h6> </footer>
+        
+    
+         
+</body>
+</html>

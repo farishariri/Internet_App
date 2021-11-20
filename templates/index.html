@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- <link rel= "stylesheet" type= "text/css" href= "./static/",filename='style.css'> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+
+{% extends 'layout.html' %}
+{% block content %} 
+ 
+   
+    <header> Machine Learning Club at UBT</header>
+    <img style="width:250px;height:250px;" class="center" style="margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://c.top4top.io/p_2084rux1s1.jpg">
+    
+    <!-- Font Awesome Icon-->
+    <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ullam facilis dicta exercitationem laboriosam in eius saepe dolor possimus voluptas, corporis, repellendus, ad placeat nulla id veniam et ea doloribus.</p>
+      
+    <button id= "myButton" class="myButton"> Press here</button>
+    <div id = 'mydata' class = "myData" style="background-color: rgb(134, 180, 180);" >  
+       <h2 class="OurPartners" >Our partners</h2>
+    </div>
+
+    
+
+    <script>
+      $("#myButton").click( function(){
+        $.ajax({
+          type: 'GET',
+          url: 'https://reqres.in/api/users/',
+        })
+        .done( function(resp) {
+
+          myhtml = ''
+
+          for (person of resp.data) {
+            myhtml += `
+                  <h3> ${person.first_name} </h3>
+                
+                  <img src="${person.avatar}" style="width:300px;height:400px;"  >
+                
+                  
+                  `;;
+          }
+          $('#mydata').html(myhtml)
+          console.log(resp)
+        })
+        .fail()
+        .always();
+      });
+    </script>
+
+    
+    
+
+    <i class="fas fa-atom" style="font-size:64px;"></i>
+    
+{% endblock %}  
+    
+
+
+</body>
+</html>
